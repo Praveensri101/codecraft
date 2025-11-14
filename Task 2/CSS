@@ -1,0 +1,74 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  background: linear-gradient(135deg, #1e3c72, #2a5298, #30cfd0);
+  background-size: 300% 300%;
+  animation: gradientFlow 12s ease infinite;
+
+  color: #fff;
+}
+
+/* Smooth Slow Gradient Animation */
+@keyframes gradientFlow {
+  0% { background-position: top left; }
+  50% { background-position: bottom right; }
+  100% { background-position: top left; }
+}
+
+.stopwatch-container {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 35px;
+  border-radius: 20px;
+
+  /* Attractive Professional Border */
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(12px);
+
+  /* Elegant Soft Shadow */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25),
+              0 0 25px rgba(255, 255, 255, 0.2);
+}
+
+.display {
+  font-size: 3em;
+  margin: 20px 0;
+  text-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+}
+
+.buttons button {
+  margin: 8px;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 10px;
+
+  /* Professional Button Gradient */
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  color: #003a53;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+
+  transition: 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 150, 200, 0.3);
+
+  /* Attractive Border */
+  border: 2px solid rgba(255, 255, 255, 0.6);
+}
+
+.buttons button:hover {
+  background: linear-gradient(135deg, #00dbde, #fc00ff);
+  color: white;
+
+  box-shadow: 0 8px 20px rgba(0, 150, 200, 0.6);
+  transform: translateY(-3px);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
