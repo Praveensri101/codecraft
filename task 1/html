@@ -1,24 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Stopwatch Web App</title>
-  <link rel="stylesheet" href="index.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interactive Navigation Menu</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="stopwatch-container">
-    <h1>Stopwatch</h1>
-    <div class="display" id="display">00:00:00</div>
-    <div class="buttons">
-      <button id="start">Start</button>
-      <button id="pause">Pause</button>
-      <button id="reset">Reset</button>
-      <button id="lap">Lap</button>
-    </div>
-    <ul id="laps"></ul>
-  </div>
 
-  <script src="jfifje.js-"></script>
+  <nav id="navbar">
+    <div class="logo">My Website</div>
+    <ul>
+      <li><button onclick="location.href='#home'">Home</button></li>
+      <li><button onclick="location.href='#about'">About</button></li>
+      <li><button onclick="location.href='#services'">Services</button></li>
+      <li><button onclick="location.href='#contact'">Contact</button></li>
+    </ul>
+  </nav>
+
+  <div class="hero" id="home">Welcome to My task 1 Landing Page</div>
+
+  <section id="about">About Section</section>
+  <section id="services">Services Section</section>
+  <section id="contact">Contact Section</section>
+
+  <script src="script.js"></script>
 </body>
 </html>
